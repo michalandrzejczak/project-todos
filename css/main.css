@@ -4,12 +4,19 @@ form {
 textarea {
     resize: none;
 }
-textarea.tasktext {
-    height: 100px;
+ul {
+    list-style-type: none;
 }
 .max-width {
     max-width: 100%;
 }
 .btn-margin {
     margin: 15px auto;
+}
+.task {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.done-true {
+    text-decoration: line-through;
+    color: rgb(180, 180, 180);
 }
