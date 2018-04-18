@@ -4,7 +4,7 @@ app.controller("appCtrl", ["$scope", "tasks", function($scope, tasks) {
     $scope.addTask = function () {
         $scope.tasks.push({"text": $scope.newTask.text, "date": inputDate.value, "done": false});
         $scope.newTask.text = "";
-        $scope.newTask.date = moment().format("MM/DD/YYYY hh:mm A");
+        $scope.newTask.date = moment().format("MM/DD/YYYY h:mm A");
     };
    
 }]);
