@@ -1,0 +1,15 @@
+form {
+    padding: 10px;
+}
+textarea {
+    resize: none;
+}
+textarea.tasktext {
+    height: 100px;
+}
+.max-width {
+    max-width: 100%;
+}
+.btn-margin {
+    margin: 15px auto;
+}
