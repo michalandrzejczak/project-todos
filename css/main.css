@@ -10,13 +10,69 @@ ul {
 .max-width {
     max-width: 100%;
 }
+.addTask-container {
+    background-color: rgba(0, 0, 0, 0.15);
+}
 .btn-margin {
-    margin: 15px auto;
+    margin: 15px 15px;
 }
 .task {
     background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px 30px;
+    overflow: hidden;
+}
+.todos-left {
+    margin: 12px 0;
+}
+.span-left {
+    font-size: 1.2em;
+}
+.left-0 {
+   color: #00b700;
 }
 .done-true {
     text-decoration: line-through;
     color: rgb(180, 180, 180);
+}
+.checkbox .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    background-color: #f9f9f9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+.checkbox .cr .cr-icon {
+    position: absolute;
+    font-size: 0.7em;
+    line-height: 0;
+    top: 50%;
+    left: 15%;
+}
+.checkbox label {
+     padding-left: 10px;
+    float: left;
+}
+.checkbox label input[type="checkbox"] {
+    display: none;
+}
+.checkbox label input[type="checkbox"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+.checkbox label input[type="checkbox"]:disabled + .cr {
+    opacity: .5;
+}
+@media (max-width: 1170px) {
+    .task {
+    margin: 20px 15px;
+    }
 }
